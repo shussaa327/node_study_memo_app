@@ -1,0 +1,20 @@
+<% const tasks =[
+  {id: 1, task_name: "掃除"},
+  {id: 2, task_name: "デザイン修正"},
+  {id: 3, task_name: "書類作成"},
+]; %>
+
+<header>
+  <a href= "/">topページへ</a>
+</header>
+
+<ul>
+  <% tasks.forEach((task) => {%>
+    <li>
+      <span><%= task.id %></span>
+
+      <span><%= task.task_name %></span>
+    </li>
+  <% }); %>
+
+</ul>
